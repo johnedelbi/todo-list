@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.list {
+    position: relative;
+    background: #fff;
+    width: 550px;
+}
+
+.list h2 {
+    background: #A7E899;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+
+}
+
+.list ul {
+    position: relative;
+    padding: 20px;
+}
+
+.list ul li {
+    position: relative;
+    list-style: none;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.list ul li:last-child {
+    border-bottom: none;
+}
+
+.list ul li label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list ul li label input {
+    visibility: hidden;
+    apperance: none;
+}
+
+.list ul li label p {
+    position: absolute;
+}
+
+.list ul li label span {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li span:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    transform: rotate(-40deg);
+}
+
+.list ul li label input:checked~p {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.list ul li label input:checked~span {
+    background: #38955D;
+    border: 1px solid #38955D;
+}
+
+.list ul li label input:checked~span::before {
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.add-new-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-btn {
+
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+
+.add-input {
+    margin: 5px;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    width: auto;
+}
